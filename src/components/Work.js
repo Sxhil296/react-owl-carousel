@@ -10,17 +10,40 @@ import work5 from '../assets/work6.webp'
 import work6 from '../assets/hero1.webp'
 
 const Work = () => {
+
+    const options = {
+        margin: 30,
+        responsiveClass: true,
+        nav: true,
+        dots: true,
+        autoplay: false,
+        // navText: ["Prev", "Next"],
+        smartSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            400: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            // 700: {
+            //     items: 3,
+            // },
+            1000: {
+                items: 3,
+    
+            }
+        },
+    };
+
   return (
     <div>
         <OwlCarousel
         className='owl-theme' 
-        items="3"
-        dots
-        loop
-        margin={10}
-        nav
-        mouseDrag
-        
+        {...options}
         >
     <div class='item'>
         <img src={work1} alt="" />
