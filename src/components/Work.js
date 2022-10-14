@@ -17,10 +17,15 @@ const Work = () => {
         nav: true,
         dots: true,
         dotsEach: true,
+        // loop: true,
         // dotsEach: 3,
         autoplay: false,
         // navText: ["Prev", "Next"],
         // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        navText:[
+            '<span class="arrow prev">‹</span>',
+            '<span class="arrow next">›</span>'
+          ],
         smartSpeed: 1000,
         responsive: {
             0: {
@@ -49,22 +54,22 @@ const Work = () => {
         {...options}
         >
     <div class='item'>
-        <img src={work1} alt="" />
+        <img src={work1} alt="pic1" />
     </div>
     <div class='item'>
-    <img src={work2} alt="" />
+    <img src={work2} alt="pic2" />
     </div>
     <div class='item'>
-    <img src={work3} alt="" />
+    <img src={work3} alt="pic3" />
     </div>
     <div class='item'>
-    <img src={work4} alt="" />
+    <img src={work4} alt="pic4" />
     </div>
     <div class='item'>
-    <img src={work5} alt="" />
+    <img src={work5} alt="pic5" />
     </div>
     <div class='item'>
-    <img src={work6} alt="" />
+    <img src={work6} alt="pic6" />
     </div>
    
 </OwlCarousel>
