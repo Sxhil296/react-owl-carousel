@@ -16,8 +16,11 @@ const Work = () => {
         responsiveClass: true,
         nav: true,
         dots: true,
+        dotsEach: true,
+        // dotsEach: 3,
         autoplay: false,
         // navText: ["Prev", "Next"],
+        // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
         smartSpeed: 1000,
         responsive: {
             0: {
